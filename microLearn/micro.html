@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microlearning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="header">
+        <h1>SnapLearn - <span>Quick and easy learning.</span> <span> <button class="menu-toggle" onclick="toggleMenu()">☰</button></span></h1>
+        <nav>
+            <ul>
+                <li><a onclick="exploreCourses()">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           
+
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Learn in Minutes, Master Skills</h2>
+        <p>Short, engaging lessons to boost your knowledge quickly.</p>
+        <button onclick="exploreCourses()" class="btn">Explore Courses</button>
+    </section>
+
+    <section id="courses">
+        <h2>Popular Courses</h2>
+        <div class="course-list">
+            <div class="course" onclick="showVideos('ai')">
+                <h3>Introduction to AI</h3>
+                <p>Learn the basics of Artificial Intelligence in just 5 minutes.</p>
+            </div>
+            <div class="course" onclick="showVideos('webdev')">
+                <h3>Web Development Basics</h3>
+                <p>Build your first webpage in 10 minutes.</p>
+            </div>
+            <div class="course" onclick="showVideos('marketing')">
+                <h3>Digital Marketing 101</h3>
+                <p>Understand digital marketing strategies in short lessons.</p>
+            </div>
+            <div class="course" onclick="showVideos('appdevelopment')">
+                <h3>Mobile App Development</h3>
+                <p>Learn mobile development in a snap.</p>
+            </div>
+            <div class="course" onclick="showVideos('webdev')">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript, and modern frameworks.</p>
+            </div>
+            <div class="course" onclick="showVideos('uiux')">
+                <h3>UI/UX Design</h3>
+                <p>Master Figma, Adobe XD, and wireframing techniques.</p>
+            </div>
+            <div class="course" onclick="showVideos('datascience')">
+                <h3>Data Science & Machine Learning</h3>
+                <p>Explore Python, TensorFlow, and data visualization.</p>
+            </div>
+            <div class="course" onclick="showVideos('cybersecurity')">
+                <h3>Cybersecurity & Ethical Hacking</h3>
+                <p>Understand network security, penetration testing, and threats.</p>
+            </div>
+            <div class="course" onclick="showVideos('digitalmarketing')">
+                <h3>Digital Marketing</h3>
+                <p>Learn SEO, PPC, content marketing, and social media.</p>
+            </div>
+            <div class="course" onclick="showVideos('gameDev')">
+                <h3>Game Development</h3>
+                <p>Build games with Unity, Unreal Engine, and Godot.</p>
+            </div>
+            <div class="course" onclick="showVideos('finance')">
+                <h3>Stock Market & Trading</h3>
+                <p>Understand Forex, cryptocurrency, and investment strategies.</p>
+            </div>
+            <div class="course" onclick="showVideos('videoediting')">
+                <h3>Video Editing</h3>
+                <p>Master Premiere Pro, Final Cut, and DaVinci Resolve.</p>
+            </div>
+            <div class="course" onclick="showVideos('devops')">
+                <h3>DevOps & Cloud Computing</h3>
+                <p>Learn AWS, Docker, Kubernetes, and CI/CD pipelines.</p>
+            </div>
+            <div class="course" onclick="showVideos('business')">
+                <h3>Entrepreneurship & Business Strategy</h3>
+                <p>Develop skills for startups, branding, and growth.</p>
+            </div>
+            <div class="course" onclick="showVideos('productivity')">
+                <h3>Productivity & Time Management</h3>
+                <p>Improve efficiency with proven strategies and tools.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="video-section">
+        <h2>Recommended Videos</h2>
+        <div id="videos"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MicroLearn. All Rights Reserved.</p>
+    </footer>
+
+    <script src="mico.js">
+       
+    </script>
+</body>
+</html>
